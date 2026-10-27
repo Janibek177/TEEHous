@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEEHAUS | Premium T-Shirts</title>
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2589/2589903.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="toast-container" id="toastContainer"></div>
+
+    <div class="load" id="load">
+        <h1>TEEHAUS</h1>
+        <div class="line"></div>
+        <p>WELCOME TO OUR WORLD</p>
+    </div>
+
+    <div class="auth-modal" id="authModal">
+        <div class="auth-box">
+            <h2>Sign In</h2>
+            <p class="auth-sub">Access your account to order modern t-shirts</p>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password" required>
+
+                <p id="authError" class="auth-error"></p>
+
+                <button type="submit" class="btn send">SIGN IN ↗</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="top">
+        <p>Welcome to TEEHAUS — everyday comfort & premium style</p>
+        <div>
+            <a href="#contact">Support</a>
+            <a href="#contact">Shipping</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <header class="head">
+        <a href="#home" class="logo">TEE<span>HAUS</span></a>
+
+        <nav class="menu" id="menu">
+            <a href="#home">Home</a>
+            <a href="#cats">Collections</a>
+            <a href="#goods">Products</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-right">
+            <a href="#contact" class="call">GET IN TOUCH ↗</a>
+            <div class="profile-container" id="profileContainer">
+                <img src="image.png" alt="Profile" class="profile-avatar" id="profileAvatar">
+                <div class="profile-dropdown" id="profileDropdown">
+                    <button id="signOutBtn">Sign Out</button>
+                </div>
+            </div>
+            <button class="bars" id="bars" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="topbox" id="home">
+            <div class="toptext">
+                <p class="small">PREMIUM T-SHIRT COLLECTION</p>
+                <h1>WEAR THE ART<br>OF <span>MINIMALISM.</span></h1>
+                <p class="desc">Discover organic cotton tees, tailored modern fits, and timeless everyday essentials built to last.</p>
+                <a href="#goods" class="btn">EXPLORE COLLECTION ↗</a>
+            </div>
+
+            <div class="numbers">
+                <div><b>01</b><p>100% Organic Cotton</p></div>
+                <div><b>02</b><p>Tailored Fit</p></div>
+                <div><b>03</b><p>Worldwide Express</p></div>
+            </div>
+        </section>
+
+        <section class="section" id="cats">
+            <div class="title">
+                <div>
+                    <p class="small">OUR COLLECTION</p>
+                    <h2>Find Your <span>Perfect Fit.</span></h2>
+                </div>
+                <a href="#goods" class="link">VIEW ALL PRODUCTS ↗</a>
+            </div>
+
+            <div class="cards">
+                <a href="#goods" class="card card1">
+                    <p>01 / ESSENTIALS</p>
+                    <h3>Basic Tees</h3>
+                    <span>Discover more ↗</span>
+                </a>
+
+                <a href="#goods" class="card card2">
+                    <p>02 / STREETWEAR</p>
+                    <h3>Oversized Fit</h3>
+                    <span>Discover more ↗</span>
+                </a>
+
+                <a href="#goods" class="card card3">
+                    <p>03 / GRAPHIC</p>
+                    <h3>Printed Edition</h3>
+                    <span>Discover more ↗</span>
+                </a>
+
+                <a href="#goods" class="card card4">
+                    <p>04 / ATHLETIC</p>
+                    <h3>Activewear Tops</h3>
+                    <span>Discover more ↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="goods" id="goods">
+            <div class="section">
+                <div class="title">
+                    <div>
+                        <p class="small">THE TEEHAUS EDIT</p>
+                        <h2>Popular <span>T-Shirts.</span></h2>
+                    </div>
+                    <a href="#contact" class="link">NEED SIZING HELP? ↗</a>
+                </div>
+
+                <div class="filters">
+                    <button class="active" data-type="all">All Products</button>
+                    <button data-type="basic">Basic</button>
+                    <button data-type="oversized">Oversized</button>
+                </div>
+
+                <div class="items">
+                    <div class="item" data-type="basic">
+                        <div class="pic">
+                            <img src="image.png" alt="Minimal Black Tee">
+                            <span class="tag">BESTSELLER</span>
+                        </div>
+                        <div class="info">
+                            <p>BASIC / COTTON</p>
+                            <h3>Minimal Black Tee</h3>
+                            <div class="price"><b>$45</b><button class="more" data-name="Minimal Black Tee">+</button></div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-type="oversized">
+                        <div class="pic">
+                            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=80" alt="Urban Heavyweight Tee">
+                            <span class="tag dark">NEW ARRIVAL</span>
+                        </div>
+                        <div class="info">
+                            <p>OVERSIZED / HEAVYWEIGHT</p>
+                            <h3>Urban Heavyweight Tee</h3>
+                            <div class="price"><b>$65</b><button class="more" data-name="Urban Heavyweight Tee">+</button></div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-type="basic">
+                        <div class="pic">
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=80" alt="Pure White Crewneck">
+                            <span class="tag red">DESIGN PICK</span>
+                        </div>
+                        <div class="info">
+                            <p>BASIC / CLASSIC FIT</p>
+                            <h3>Pure White Crewneck</h3>
+                            <div class="price"><b>$40</b><button class="more" data-name="Pure White Crewneck">+</button></div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-type="oversized">
+                        <div class="pic">
+                            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&q=80" alt="Vintage Wash Oversized">
+                            <span class="tag green">PREMIUM</span>
+                        </div>
+                        <div class="info">
+                            <p>OVERSIZED / WASHED COTTON</p>
+                            <h3>Vintage Wash Oversized</h3>
+                            <div class="price"><b>$75</b><button class="more" data-name="Vintage Wash Oversized">+</button></div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-type="basic">
+                        <div class="pic">
+                            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=80" alt="Olive Minimalist Tee">
+                        </div>
+                        <div class="info">
+                            <p>BASIC / ORGANIC COTTON</p>
+                            <h3>Olive Minimalist Tee</h3>
+                            <div class="price"><b>$48</b><button class="more" data-name="Olive Minimalist Tee">+</button></div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-type="oversized">
+                        <div class="pic">
+                            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=600&q=80" alt="Street Graphic Tee">
+                        </div>
+                        <div class="info">
+                            <p>OVERSIZED / GRAPHIC</p>
+                            <h3>Street Graphic Tee</h3>
+                            <div class="price"><b>$70</b><button class="more" data-name="Street Graphic Tee">+</button></div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-type="basic">
+                        <div class="pic">
+                            <img src="https://images.unsplash.com/photo-1622445268465-84385740d05a?auto=format&fit=crop&w=600&q=80" alt="Graphite Slim Fit">
+                        </div>
+                        <div class="info">
+                            <p>BASIC / SLIM FIT</p>
+                            <h3>Graphite Slim Fit</h3>
+                            <div class="price"><b>$52</b><button class="more" data-name="Graphite Slim Fit">+</button></div>
+                        </div>
+                    </div>
+
+                    <div class="item" data-type="oversized">
+                        <div class="pic">
+                            <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=600&q=80" alt="Sandstone Boxy Tee">
+                        </div>
+                        <div class="info">
+                            <p>OVERSIZED / BOXY CUT</p>
+                            <h3>Sandstone Boxy Tee</h3>
+                            <div class="price"><b>$68</b><button class="more" data-name="Sandstone Boxy Tee">+</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner" id="service">
+            <div class="bannertext">
+                <p class="small">CRAFTED FOR DAILY WEAR</p>
+                <h2>Premium Fabrics.<br><span>Flawless Fits.</span></h2>
+                <p>From yarn selection to final stitching, we craft t-shirts designed for maximum durability and comfort.</p>
+                <a href="#contact" class="btn">REQUEST A SIZING GUIDE ↗</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="title">
+                <div>
+                    <p class="small">OUR COMMITMENT</p>
+                    <h2>Quality in <span>Every Thread.</span></h2>
+                </div>
+                <p class="note">Experience fashion crafted with sustainability, precise tailoring, and premium materials.</p>
+            </div>
+
+            <div class="services">
+                <div class="service">
+                    <span>01</span>
+                    <div class="symbol">⌖</div>
+                    <h3>Custom Sizing</h3>
+                    <p>Find your ideal silhouette with our detailed fit guide.</p>
+                    <a href="#contact">CHECK GUIDE ↗</a>
+                </div>
+
+                <div class="service">
+                    <span>02</span>
+                    <div class="symbol">◇</div>
+                    <h3>Sustainable Cotton</h3>
+                    <p>100% organic, ethically sourced materials for everyday wear.</p>
+                    <a href="#contact">OUR MATERIALS ↗</a>
+                </div>
+
+                <div class="service">
+                    <span>03</span>
+                    <div class="symbol">✳</div>
+                    <h3>Global Delivery</h3>
+                    <p>Fast worldwide shipping with easy hassle-free returns.</p>
+                    <a href="#contact">LEARN MORE ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="section">
+                <div class="title">
+                    <div>
+                        <p class="small">COMMUNITY FEEDBACK</p>
+                        <h2>Customer <span>Reviews.</span></h2>
+                    </div>
+                    <div class="arrows">
+                        <button id="prev">←</button>
+                        <button id="next">→</button>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="reviewpic">
+                        <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=700&q=80" alt="Happy customer">
+                    </div>
+                    <div class="reviewtext">
+                        <p class="stars">★★★★★</p>
+                        <blockquote id="quote">“The fabric quality is unmatched. These t-shirts maintain their fit and shape even after multiple washes.”</blockquote>
+                        <div class="person">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Customer Avatar" class="avatar-img" id="avatarImg">
+                            <div><b id="person">Alex Morgan</b><p id="place">Verified Buyer · New York</p></div>
+                        </div>
+                        <div class="progress"><span id="progress"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="title">
+                <div>
+                    <p class="small">THE TEEHAUS JOURNAL</p>
+                    <h2>Style & <span>Care Guides.</span></h2>
+                </div>
+                <a href="#contact" class="link">READ ALL ARTICLES ↗</a>
+            </div>
+
+            <div class="posts">
+                <a href="#contact" class="post">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=700&q=80" alt="T-Shirt Wardrobe">
+                    <p>STYLE GUIDE · 4 MIN READ</p>
+                    <h3>How to Build a Capsule Wardrobe with Essential Tees</h3>
+                    <span>READ STORY ↗</span>
+                </a>
+
+                <a href="#contact" class="post">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=700&q=80" alt="Garment Care">
+                    <p>GARMENT CARE · 3 MIN READ</p>
+                    <h3>How to Wash & Maintain Organic Cotton T-Shirts</h3>
+                    <span>READ STORY ↗</span>
+                </a>
+
+                <a href="#contact" class="post">
+                    <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=700&q=80" alt="Streetwear Fit">
+                    <p>FIT GUIDE · 5 MIN READ</p>
+                    <h3>Choosing Between Boxy, Oversized, and Slim Fits</h3>
+                    <span>READ STORY ↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contacttext">
+                <p class="small">NEED ASSISTANCE?</p>
+                <h2>We're Here to <span>Help.</span></h2>
+                <p>Have questions about sizes, bulk orders, or custom prints? Reach out to our dedicated support team.</p>
+
+                <div class="detail">
+                    <span>◷</span>
+                    <div><small>OPENING HOURS</small><b>Mon–Sat, 9 AM – 6 PM</b></div>
+                </div>
+
+                <div class="detail">
+                    <span>⌖</span>
+                    <div><small>FLAGSHIP STORE</small><b>Downtown Fashion District</b></div>
+                </div>
+            </div>
+
+            <form id="form">
+                <p class="formtitle">PRODUCT ENQUIRY</p>
+
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" placeholder="Enter your full name">
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" placeholder="you@example.com">
+
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+
+                <label for="product">I'm Interested In *</label>
+                <select id="product">
+                    <option value="">Choose a product line</option>
+                    <option>Basic Tees</option>
+                    <option>Oversized Fit</option>
+                    <option>Printed Edition</option>
+                    <option>Custom Bulk Order</option>
+                </select>
+
+                <label for="message">Your Message *</label>
+                <textarea id="message" placeholder="Tell us about your sizing or order inquiry"></textarea>
+
+                <button type="submit" class="btn send">SEND MY ENQUIRY ↗</button>
+                <p class="formnote">All fields are required. Your details will be used to respond to your enquiry.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footmain">
+            <div class="footabout">
+                <a href="#home" class="logo">TEE<span>HAUS</span></a>
+                <p>Considered design. Sustainable quality. T-shirts designed for your everyday wardrobe.</p>
+                <div class="social">
+                    <a href="#contact">Instagram ↗</a>
+                    <a href="#contact">Facebook ↗</a>
+                    <a href="#contact">Pinterest ↗</a>
+                </div>
+            </div>
+
+            <div class="footcol">
+                <h3>Explore</h3>
+                <a href="#home">Home</a>
+                <a href="#cats">Our Collections</a>
+                <a href="#goods">All Products</a>
+                <a href="#service">Our Services</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+            <div class="footcol">
+                <h3>Tee Collections</h3>
+                <a href="#goods">Basic Tees</a>
+                <a href="#goods">Oversized Fit</a>
+                <a href="#goods">Graphic Edition</a>
+                <a href="#goods">Organic Line</a>
+                <a href="#goods">Heavyweight Tops</a>
+            </div>
+
+            <div class="footcol">
+                <h3>Customer Care</h3>
+                <a href="#contact">Size Guide</a>
+                <a href="#contact">Shipping & Delivery</a>
+                <a href="#contact">Returns & Exchanges</a>
+                <a href="#contact">Care Instructions</a>
+                <a href="#contact">Frequently Asked Questions</a>
+            </div>
+
+            <div class="footcol footcontact">
+                <h3>Get in Touch</h3>
+                <p>Have a question or custom request? We'd love to hear from you.</p>
+                <a href="tel:+10005550192">+1 (000) 555-0192</a>
+                <a href="mailto:hello@teehaus.example">hello@teehaus.example</a>
+                <p>Monday – Saturday<br>9:00 AM – 6:00 PM</p>
+                <a href="#contact" class="footbtn">CONTACT OUR TEAM ↗</a>
+            </div>
+        </div>
+
+        <div class="footbottom">
+            <p>© 2026 TEEHAUS. ALL RIGHTS RESERVED.</p>
+            <div>
+                <a href="#contact">Privacy Policy</a>
+                <a href="#contact">Terms & Conditions</a>
+            </div>
+            <a href="#home" class="up">BACK TO TOP ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
